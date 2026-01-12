@@ -1,8 +1,8 @@
 from django.db import models
 
-class Video(models.Model):
+class Data(models.Model):
     title = models.CharField(max_length=255, blank=False, unique=True)
-    description = models.TextField(blank=False)
+    text = models.TextField(blank=False)
     author = models.CharField(max_length=255, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
 

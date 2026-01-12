@@ -1,7 +1,6 @@
 from django.urls import path
-from .views import DataSingleView
-
+from .views import DataView
 
 urlpatterns = [
-    path('data/', DataSingleView.as_view(), name='data'),
+    path('data/', DataView.as_view(), name='data'),
 ]
